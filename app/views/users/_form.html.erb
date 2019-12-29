@@ -1,0 +1,62 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name ,id: "user_name"%>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email , id: "user_email"%>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.password_field :password , id: "user_password"%>
+  </div>
+
+  <div class="field">
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation, id: "user_password_confirmation" %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :Role %>
+    <%= form.select :role ,["Student" ,"Teacher","Admin"] ,id: "user_role"%>
+  </div>
+
+  <div class="field">
+    <%= form.label :school_code %>
+    <%= form.text_field :school_code , id: "user_school_code" %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :identity %>
+    <%= form.text_field :identity , id: "user_identity"%>
+  </div>
+
+  <div class="field">
+    <%= form.label :class %>
+    <%= form.number_field :standard, id: "user_standard" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :section %>
+    <%= form.text_field :section , id: "user_section" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit  id: "user_signup_btn" , value: "SingUp"%>
+  </div>
+<% end %>

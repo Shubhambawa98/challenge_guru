@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :users do 
+  	get 'users/new' , :as => 'signup'
+  end
+
   get 'welcome/index'
   root 'welcome#index'
   
