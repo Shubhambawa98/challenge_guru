@@ -9,11 +9,40 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
-= require rails-ujs
-= require activestorage
-= require turbolinks
-= require_tree .
-= require jquery
-= require jquery_ujs
+//= require jquery
+//= require jquery_ujs
+//= require jquery
+$(document).ready(function(){
+  $('#menu-toggle').click( function()
+        {
+            $('#menu-toggle').toggleClass('active');
+            $('#navhide').toggleClass('active');
 
+        })
+  // User role change
+  $('#user_role').change(function(){
+  var user_role = $('#user_role').val();
+  if (user_role == "Admin")
+  {
+    $('#div_user_school_code').addClass('hide');
+    $('#div_user_identity').addClass('hide');
+    $('#div_user_standard').addClass('hide');
+    $('#div_user_section').addClass('hide');
+  }
+  else if(user_role == "Teacher")
+  {
+  $('#div_user_school_code').removeClass('hide');
+  $('#div_user_identity').addClass('hide');
+  $('#div_user_standard').addClass('hide');
+  $('#div_user_section').addClass('hide');
+  }
+  else
+  {
+    $('#div_user_school_code').removeClass('hide');
+    $('#div_user_identity').removeClass('hide');
+    $('#div_user_standard').removeClass('hide');
+    $('#div_user_section').removeClass('hide');    
+  }
+
+})
+});

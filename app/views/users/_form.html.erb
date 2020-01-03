@@ -30,28 +30,28 @@
     <%= form.label :password_confirmation %>
     <%= form.password_field :password_confirmation, id: "user_password_confirmation" %>
   </div>
-  
+
   <div class="field">
     <%= form.label :Role %>
     <%= form.select :role ,["Student" ,"Teacher","Admin"] ,id: "user_role"%>
   </div>
 
-  <div class="field">
+  <div class="field" id = "div_user_school_code">
     <%= form.label :school_code %>
     <%= form.text_field :school_code , id: "user_school_code" %>
   </div>
-  
-  <div class="field">
+
+  <div class="field" id= "div_user_identity">
     <%= form.label :identity %>
     <%= form.text_field :identity , id: "user_identity"%>
   </div>
 
-  <div class="field">
+  <div class="field" id = "div_user_standard">
     <%= form.label :class %>
     <%= form.number_field :standard, id: "user_standard" %>
   </div>
 
-  <div class="field">
+  <div class="field" id = "div_user_section">
     <%= form.label :section %>
     <%= form.text_field :section , id: "user_section" %>
   </div>
