@@ -24,6 +24,10 @@
  	border-radius: 6px;
  	box-shadow: 0 2px 5px rgba(0,0,0,.2);
  }
+ .hide
+ {
+   display: none;
+ }
  .logo
  {
  	color:#069370;
@@ -35,7 +39,7 @@
  	box-sizing: border-box;
  	float: left;
  	font-weight: 700px;
- 	text-decoration: none; 
+ 	text-decoration: none;
  }
  nav
  {
@@ -74,7 +78,7 @@
  		transition: 0.5s;
  		text-decoration: none;
 
- 		
+
 
  }
  @media(max-width: 1200px)
@@ -143,5 +147,5 @@
  		transition: 0.5s;
  		text-decoration: none;
  	}
- 
+
  }
