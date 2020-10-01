@@ -1,7 +1,7 @@
 # README
 
 Message for contributor:
-Show your efforts and help me making this repo better.
+Show your efforts and help me making this repository better.
 I will appreciate your efforts.
 
 ###############################
