@@ -1,5 +1,11 @@
 # README
 
+Message for contributor:
+Show your efforts and help me making this repository better.
+I will appreciate your efforts.
+
+###############################
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
