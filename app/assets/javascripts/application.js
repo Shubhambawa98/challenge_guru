@@ -21,7 +21,7 @@ $(document).ready(function(){
         })
   // User role change
   $('#user_role').change(function(){
-  var user_role = $('#user_role').val();
+  let  user_role = $('#user_role').val();
   if (user_role == "Admin")
   {
     $('#div_user_school_code').addClass('hide');
